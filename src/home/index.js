@@ -6,11 +6,11 @@ import {Provider} from 'react-redux';
 import store from './store';
 
 render(
-        <Provider store={store} >
         <BrowserRouter>
+        <Provider store={store} >
             <App />
-        </BrowserRouter>
-        </Provider>,
+        </Provider>
+        </BrowserRouter>,
     document.getElementById('app')
 );
 
